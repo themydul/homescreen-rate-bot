@@ -2,8 +2,7 @@ import random
 from telegram import Update
 from telegram.ext import ApplicationBuilder, MessageHandler, ContextTypes, filters
 
-BOT_TOKEN = "PUT_YOUR_TOKEN_HERE"
-
+BOT_TOKEN = "8561488954:AAECu2_Kwtkw6tSlh6a6tEauRi_1akANP84"
 async def rate_image(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if update.message.photo:
         rating = random.randint(0, 10)
