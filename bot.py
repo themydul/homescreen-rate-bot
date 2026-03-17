@@ -10,7 +10,7 @@ async def rate_image(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
         # Only reply if caption contains "rate"
         if text and "rate" in text.lower():
-            rating = random.randint(4, 10)
+            rating = random.randint(5, 10)
             await update.message.reply_text(f"🔥 Home Screen Rate: {rating}/10")
 
 app = ApplicationBuilder().token(BOT_TOKEN).build()
